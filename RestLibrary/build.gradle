@@ -7,8 +7,8 @@ ext {
     bintrayName = 'rest-lib'
 
     publishedGroupId = 'com.wenjackp.android'
-    libraryName = 'rest-lib'
-    artifact = 'restlibrary'
+    libraryName = 'RestLibrary'
+    artifact = 'RestLibrary'
 
     libraryDescription = '我定义个一个Library'
 
