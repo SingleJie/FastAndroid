@@ -1,0 +1,66 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'rest-lib'
+
+    publishedGroupId = 'com.wenjackp.android'
+    libraryName = 'rest-lib'
+    artifact = 'restlibrary'
+
+    libraryDescription = '我定义个一个Library'
+
+    siteUrl = 'https://github.com/SingleJie/WenJackpLib'
+    gitUrl = 'https://github.com/SingleJie/WenJackpLib.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'wen'
+    developerName = 'jackp'
+    developerEmail = 'WenJackp@126.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
+
+    defaultConfig {
+        minSdkVersion 10
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.android.support:recyclerview-v7:23.1.0'
+    compile 'com.android.support:design:23.1.0'
+}
+
+//task javadoc(type: Javadoc) {
+//    options.encoding = "utf-8"  //如果不行就试下: options.charSet = 'UTF-8'
+//    source = android.sourceSets.main.java.srcDirs
+//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+//}
+
+//tasks.withType(JavaCompile) {
+//    options.encoding = "UTF-8"
+//}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
