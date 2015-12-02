@@ -74,11 +74,6 @@ public class FontStyleBuilder {
         return this;
     }
 
-    /**
-     *
-     * @param styles @See{Typeface}
-     * @return
-     */
     public FontStyleBuilder textStyle(int styles){
         this.styles = styles;
         return this;

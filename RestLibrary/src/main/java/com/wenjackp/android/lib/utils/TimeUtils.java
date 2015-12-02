@@ -14,12 +14,7 @@ public class TimeUtils {
 
     public static final String pattern = "yyyy-MM-dd HH:mm:ss";
 
-    /**
-     * 比较两个时间的大小
-     *
-     * @param time yyyy-MM-dd HH:mm:ss
-     * @return 大于0 当前时间大于目标时间
-     */
+
     public static int compareTime(String time) throws Exception {
         SimpleDateFormat sdf = new SimpleDateFormat(pattern);
 
@@ -36,33 +31,15 @@ public class TimeUtils {
 
     }
 
-    /**
-     * 获取系统当前时间
-     *
-     * @param pattern 显示时间的格式  例: yyyy-MM-dd HH:mm:ss
-     * @return
-     */
     public static String getCurrentTime(String pattern) {
         SimpleDateFormat sdf = new SimpleDateFormat(pattern);
         return sdf.format(new Date(System.currentTimeMillis()));
     }
 
-    /**
-     * 获取当前时间
-     *
-     * @return long
-     */
     public static long getCurrentTime() {
         return System.currentTimeMillis();
     }
 
-    /**
-     * 计算两个时间的时间差
-     *
-     * @param timeFirst  时间1
-     * @param timeSecond 时间2
-     * @return 时间差 毫秒
-     */
     public static long getTimeDiff(String timeFirst, String timeSecond) throws Exception {
         SimpleDateFormat sdf = new SimpleDateFormat(pattern);
         long tFirst = sdf.parse(timeFirst).getTime();
@@ -70,25 +47,12 @@ public class TimeUtils {
         return tFirst - sFirst;
     }
 
-    /**
-     * 计算目标时间与当前时间的时间差
-     *
-     * @param tagetTime 目标时间
-     * @return 时间差 毫秒
-     */
     public static long getCurrentTimeDiff(String tagetTime) throws Exception {
         SimpleDateFormat sdf = new SimpleDateFormat(pattern);
         long tTime = sdf.parse(tagetTime).getTime();
         return getCurrentTime() - tTime;
     }
 
-    /**
-     * 比较两个时间的间距并转换成现在语言说明
-     *
-     * @param defaultTime
-     * @param pattern
-     * @return
-     */
     public static String getStringTime(String defaultTime, String pattern) {
         try {
 

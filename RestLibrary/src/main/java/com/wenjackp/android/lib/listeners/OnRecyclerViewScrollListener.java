@@ -21,11 +21,6 @@ public class OnRecyclerViewScrollListener extends RecyclerView.OnScrollListener 
     private boolean isLoading = false;
     private OnLastItemVisiableListener mListener;
 
-    /**
-     * 设置监听事件
-     *
-     * @param mItemVisiableListener
-     */
     public OnRecyclerViewScrollListener(OnLastItemVisiableListener mItemVisiableListener) {
         this.mListener = mItemVisiableListener;
     }
@@ -40,7 +35,6 @@ public class OnRecyclerViewScrollListener extends RecyclerView.OnScrollListener 
 
     @Override
     public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
-
         int lastVisiable = -1;
         int totalVisiable = -1;
         RecyclerView.LayoutManager mLayoutManager = recyclerView.getLayoutManager();
@@ -74,9 +68,6 @@ public class OnRecyclerViewScrollListener extends RecyclerView.OnScrollListener 
         super.onScrolled(recyclerView, dx, dy);
     }
 
-    /**
-     * 完成数据加载后需要调用此方法重置
-     */
     public void onLoadMoreCompelete() {
         isLoading = false;
         mLastItemVisiable = false;

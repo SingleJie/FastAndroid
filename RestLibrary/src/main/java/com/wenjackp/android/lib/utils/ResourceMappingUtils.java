@@ -34,14 +34,6 @@ public final class ResourceMappingUtils {
         this.mContext = mContext;
     }
 
-
-    /**
-     * 反射Res资源
-     *
-     * @param resourceName 资源名称
-     * @param resourceType 资源类型
-     * @return
-     */
     public int getAllResourceId(String resourceName, String resourceType) {
         int resourceId = 0;
 
@@ -53,14 +45,6 @@ public final class ResourceMappingUtils {
         return resourceId;
     }
 
-    /**
-     * 反射Res资源
-     *
-     * @param mContext     上下文对象
-     * @param resourceName 资源名称
-     * @param resourceType 资源类型
-     * @return
-     */
     public static int getAllResourceId(Context mContext, String resourceName, String resourceType) {
         int resourceId = 0;
 
@@ -72,187 +56,77 @@ public final class ResourceMappingUtils {
         return resourceId;
     }
 
-    /**
-     * 获取图片资源Id
-     *
-     * @param name
-     * @return
-     */
     public int getDrawableId(String name) {
         return getAllResourceId(name, DRAWABLE);
     }
 
-    /**
-     * 获取LayoutId
-     *
-     * @param name
-     * @return
-     */
     public int getLayoutId(String name) {
         return getAllResourceId(name, LAYOUT);
     }
 
-    /**
-     * 获取动画ID
-     *
-     * @param name
-     * @return
-     */
     public int getAnimationId(String name) {
         return getAllResourceId(name, ANIM);
     }
 
-    /**
-     * 获取StyleableId
-     *
-     * @param name
-     * @return
-     */
     public int getStyleableId(String name) {
         return getAllResourceId(name, STYLEABLE);
     }
 
-    /**
-     * 获取StyleableId
-     *
-     * @param name
-     * @return
-     */
     public static int getStyleableId(Context mContext, String name) {
         return getAllResourceId(mContext, name, STYLEABLE);
     }
 
-    /**
-     * 获取颜色资源ID
-     *
-     * @param name
-     * @return
-     */
     public int getColorId(String name) {
         return getAllResourceId(name, COLOR);
     }
 
-    /**
-     * 获取颜色资源ID
-     *
-     * @param mContext
-     * @param name
-     * @return
-     */
+
     public static int getColorId(Context mContext, String name) {
         return getAllResourceId(mContext, name, COLOR);
     }
 
-    /**
-     * 获取控件ID
-     *
-     * @param name
-     * @return
-     */
     public int getControlsId(String name) {
         return getAllResourceId(name, ID);
     }
 
-    /**
-     * 获取字符串ID
-     *
-     * @param name
-     * @return
-     */
     public int getStringId(String name) {
         return getAllResourceId(name, STRING);
     }
 
-    /**
-     * 获取DimenId
-     *
-     * @param name
-     * @return
-     */
     public int getDimenId(String name) {
         return getAllResourceId(name, DIMEN);
     }
 
-    /**
-     * 获取DimenId
-     *
-     * @param mContext
-     * @param name
-     * @return
-     */
     public static int getDimenId(Context mContext, String name) {
         return getAllResourceId(mContext, name, DIMEN);
     }
 
-    /**
-     * 获取AttrsId
-     *
-     * @param name
-     * @return
-     */
     public int getAttrId(String name) {
         return getAllResourceId(name, ATTR);
     }
 
-    /**
-     * 获取AttrsId
-     *
-     * @param mContext 上下文对象
-     * @param name     属性名称
-     * @return
-     */
     public static int getAttrId(Context mContext, String name) {
         return getAllResourceId(mContext, name, ATTR);
     }
 
-    /**
-     * 获取Bool型Id
-     *
-     * @param name
-     * @return
-     */
+
     public int getBoolId(String name) {
         return getAllResourceId(name, BOOL);
     }
 
-    /**
-     * 获取Bool型Id
-     *
-     * @param mContext
-     * @param name
-     * @return
-     */
     public static int getBoolId(Context mContext, String name) {
         return getAllResourceId(mContext, name, BOOL);
     }
 
-    /**
-     * 获取Integer类型ID
-     *
-     * @param name
-     * @return
-     */
     public int getIntegerId(String name) {
         return getAllResourceId(name, INTEGER);
     }
 
-    /**
-     * 获取Integer类型ID
-     *
-     * @param mContext
-     * @param name
-     * @return
-     */
     public static int getIntegerId(Context mContext, String name) {
         return getAllResourceId(mContext, name, INTEGER);
     }
 
-    /**
-     * 获取资源数组ID
-     *
-     * @param name
-     * @return
-     */
+
     public int[] getIdsByName(String name) {
         try {
             //use reflection to access the resource class
@@ -274,12 +148,6 @@ public final class ResourceMappingUtils {
         return null;
     }
 
-    /**
-     * 获取资源数组ID
-     *
-     * @param name
-     * @return
-     */
     public static int[] getIdsByName(Context mContext, String name) {
         try {
             //use reflection to access the resource class

@@ -156,18 +156,8 @@ public abstract class EasyRecyclerAdapter<E, T extends ViewHolder> extends Recyc
 
     }
 
-    /**
-     * 数据绑定
-     * @param position
-     * @param holder
-     * @param mItem
-     */
     public abstract void onBindData(int position, T holder, E mItem);
 
-    /**
-     * Item点击
-     * @param mListener
-     */
     public void setOnItemClickListener(OnItemClickListener mListener){
         this.mListener = mListener;
     }

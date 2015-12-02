@@ -154,19 +154,8 @@ public abstract class EasyAdapter<E, T extends ViewHolder> extends BaseAdapter {
         return convertView;
     }
 
-    /**
-     * 进行数据绑定
-     *
-     * @param position
-     * @param mViewHolder
-     * @param mItem
-     */
     public abstract void onBindData(int position, T mViewHolder, E mItem);
 
-    /**
-     * Item点击
-     * @param mListener
-     */
     public void setOnItemClickListener(OnItemClickListener mListener){
         this.mListener = mListener;
     }

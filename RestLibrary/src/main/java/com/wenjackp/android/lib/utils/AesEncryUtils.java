@@ -10,27 +10,19 @@ import javax.crypto.spec.SecretKeySpec;
 /**
  * AES加密器
  * @author Single
- * @category AES加密工具类
  * @version 1.0
  */
 public class AesEncryUtils {
 	
 	private final static int JELLY_BEAN_4_2 = 17;
-	
-	
-	/**
-	 * AES加密
-	 */
+
 	public static String encrypt(String seed, String cleartext) throws Exception
 	{
 		byte[] rawKey = getRawKey(seed.getBytes());
 		byte[] result = encrypt(rawKey, cleartext.getBytes());
 		return toHex(result);
 	}
-	
-	/**
-	 * AES解密
-	 */
+
 	public static String decrypt(String seed, String encrypted)
 			throws Exception {
 		if (seed == null || "".equals(seed) || encrypted == null || "".equals(encrypted)){
