@@ -8,7 +8,6 @@ import android.widget.AbsListView.OnScrollListener;
  *   <b>完成数据加载后必须设置onLoadMoreCompelete(),否则只会执行一次.</b>
  * @author Single
  * @version 1.0
- * @category Listener
  */
 public class OnScrollLoadMoreListener implements OnScrollListener {
 	

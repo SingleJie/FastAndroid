@@ -11,8 +11,8 @@ public class InputCheckUtils {
 	
 	/**
 	 * 检测输入的文本是否为空
-	 * @param input
-	 * @return
+	 * @param input 输入的内容
+	 * @return 判断字符串是否为空
 	 */
 	public static boolean isEmpty(String input)
 	{

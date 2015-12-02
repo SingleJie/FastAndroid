@@ -7,7 +7,6 @@ import android.util.DisplayMetrics;
 /**
  * 获取屏幕设备分辨率
  * @author Single
- * @category 获取屏幕分辨率参数工具类
  * @version 2.1
  */
 public class ScreenUtils {

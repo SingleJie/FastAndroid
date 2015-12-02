@@ -7,7 +7,6 @@ import android.view.View;
  * RecyclerViewBaseHolder 运用在RecyclerView
  * @author Single
  * @version 1.0
- * @param <T>
  */
 public class RecyclerViewBaseHolder<T> extends RecyclerView.ViewHolder {
 

@@ -8,17 +8,12 @@ import com.google.gson.Gson;
 import java.util.Map;
 
 /**
- *  SharedPreferences二次封装类
+ * SharedPreferences二次封装类
+ * 简介: 为了使用起来更轻松、方便
+ * 功能: 支持Object对象存储、加密
  *
- *  简介: 为了使用起来更轻松、方便
- *
- *  功能: 支持Object对象存储、加密
- *
- *  @author SingleJie
- *
- *  @createTime 2015-4-22
- *
- *  @version  1.0
+ * @author SingleJie
+ * @version 1.0
  */
 public class SPTools {
 
@@ -28,7 +23,7 @@ public class SPTools {
     /**
      * 加密类型
      */
-    public static final int AES_ENCRY  = 2;
+    public static final int AES_ENCRY = 2;
 
     /**
      * 默认加密Key
@@ -38,22 +33,22 @@ public class SPTools {
     /**
      * 默认没加密
      */
-    private int encryType  = -1;
+    private int encryType = -1;
 
 
-    public SPTools(Context mContext,String name,int mode){
-        mNewSP = mContext.getSharedPreferences(name,mode);
+    public SPTools(Context mContext, String name, int mode) {
+        mNewSP = mContext.getSharedPreferences(name, mode);
     }
 
     public SPTools putString(String key, String value) {
         buildEdit()
-                .putString(key,value);
+                .putString(key, value);
         return this;
     }
 
-    public SPTools putInt(String key,int value){
+    public SPTools putInt(String key, int value) {
         buildEdit()
-                .putInt(key,value);
+                .putInt(key, value);
         return this;
     }
 
@@ -63,9 +58,9 @@ public class SPTools {
         return this;
     }
 
-    public SPTools putLong(String key,long value){
+    public SPTools putLong(String key, long value) {
         buildEdit()
-                .putLong(key,value);
+                .putLong(key, value);
         return this;
     }
 
@@ -75,67 +70,67 @@ public class SPTools {
         return this;
     }
 
-    public SPTools putObject(String key,Object obj){
-        return putString(key,mGson.toJson(obj));
+    public SPTools putObject(String key, Object obj) {
+        return putString(key, mGson.toJson(obj));
     }
 
-    public <T> T getObject(String key,Class<T> mClass){
-        String json = getPreferences().getString(key,null);
-        T obj =  mGson.fromJson(json,mClass);
+    public <T> T getObject(String key, Class<T> mClass) {
+        String json = getPreferences().getString(key, null);
+        T obj = mGson.fromJson(json, mClass);
         return obj;
     }
 
     public String getString(String key, String defaultValue) {
         return getPreferences()
-                .getString(key,defaultValue);
+                .getString(key, defaultValue);
     }
 
-    public int getInt(String key,int defaultValue){
+    public int getInt(String key, int defaultValue) {
         return getPreferences()
-                .getInt(key,defaultValue);
+                .getInt(key, defaultValue);
     }
 
-    public boolean getBoolean(String key,boolean defaultValue){
+    public boolean getBoolean(String key, boolean defaultValue) {
         return getPreferences()
-                .getBoolean(key,defaultValue);
+                .getBoolean(key, defaultValue);
     }
 
-    public float getFloat(String key,float defaultValue){
+    public float getFloat(String key, float defaultValue) {
         return getPreferences()
-                .getFloat(key,defaultValue);
+                .getFloat(key, defaultValue);
     }
 
-    public long getLong(String key,Long defaultValue){
+    public long getLong(String key, Long defaultValue) {
         return getPreferences()
-                .getLong(key,defaultValue);
+                .getLong(key, defaultValue);
     }
 
-    public Map<String,?> getAll(String key){
+    public Map<String, ?> getAll(String key) {
         return getPreferences()
                 .getAll();
     }
 
-    public SharedPreferences.Editor buildEdit(){
+    public SharedPreferences.Editor buildEdit() {
         return getPreferences()
                 .edit();
     }
 
-    public void registerOnSharedPreferenceChangeListener(SharedPreferences.OnSharedPreferenceChangeListener mListener){
+    public void registerOnSharedPreferenceChangeListener(SharedPreferences.OnSharedPreferenceChangeListener mListener) {
         getPreferences().registerOnSharedPreferenceChangeListener(mListener);
     }
 
-    public void unregisterOnSharedPreferenceChangeListener(SharedPreferences.OnSharedPreferenceChangeListener mListener){
+    public void unregisterOnSharedPreferenceChangeListener(SharedPreferences.OnSharedPreferenceChangeListener mListener) {
         getPreferences().unregisterOnSharedPreferenceChangeListener(mListener);
     }
 
-    public SharedPreferences getPreferences(){
+    public SharedPreferences getPreferences() {
         return mNewSP;
     }
 
     /**
      * 提交
      */
-    public void commit(){
+    public void commit() {
         buildEdit()
                 .commit();
     }
@@ -143,19 +138,20 @@ public class SPTools {
     /**
      * 清空editor
      */
-    public void clearEditor(){
+    public void clearEditor() {
         buildEdit()
                 .clear();
     }
 
     /**
      * AES加密
+     *
      * @param content
      * @return
      */
-    protected String aesEncry(String content){
+    protected String aesEncry(String content) {
         try {
-            return AesEncryUtils.encrypt(encryKey,content);
+            return AesEncryUtils.encrypt(encryKey, content);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -164,12 +160,13 @@ public class SPTools {
 
     /**
      * AES解密码
+     *
      * @param content
      * @return
      */
-    protected String aesDecrypt(String content){
+    protected String aesDecrypt(String content) {
         try {
-            return AesEncryUtils.decrypt(encryKey,content);
+            return AesEncryUtils.decrypt(encryKey, content);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -178,6 +175,7 @@ public class SPTools {
 
     /**
      * 获取加密后的文本内容
+     *
      * @param content
      * @return
      */
@@ -194,11 +192,12 @@ public class SPTools {
 
     /**
      * 解密文本
+     *
      * @param content
      * @return
      */
-    protected String decryptContent(String content){
-        switch (encryType){
+    protected String decryptContent(String content) {
+        switch (encryType) {
             case AES_ENCRY:
 
                 return aesDecrypt(content);
@@ -210,14 +209,15 @@ public class SPTools {
 
     /**
      * 设置加密配置
+     *
      * @param encryType
      * @param encryKey
      */
-    public void setEncryConfig(int encryType,String encryKey){
+    public void setEncryConfig(int encryType, String encryKey) {
 
         this.encryType = encryType;
 
-        if(!EmptyUtils.emptyOfString(encryKey)){
+        if (!EmptyUtils.emptyOfString(encryKey)) {
             this.encryKey = encryKey;
         }
     }

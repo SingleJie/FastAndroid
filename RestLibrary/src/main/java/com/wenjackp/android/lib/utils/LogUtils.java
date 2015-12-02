@@ -9,7 +9,6 @@ import android.widget.Toast;
  *
  * @author Single
  * @version 1.5
- * @category 日志输出
  */
 public class LogUtils {
 
@@ -62,7 +61,7 @@ public class LogUtils {
     /**
      * Toast长消息打印
      *
-     * @param msg
+     * @param msg 需要打印的内容
      */
     private static void toastMsg(String msg, int duration) {
         if (mContext != null && !EmptyUtils.emptyOfString(msg)) {
@@ -82,7 +81,7 @@ public class LogUtils {
     /**
      * Toast长消息打印
      *
-     * @param resourceId
+     * @param resourceId 资源ID
      */
     public static void toastLongMsgForRes(int resourceId) {
         String msg = mContext.getResources().getString(resourceId);
@@ -92,8 +91,8 @@ public class LogUtils {
     /**
      * Toast长消息打印
      *
-     * @param format
-     * @param args
+     * @param format 格式化字符串
+     * @param args 参数
      */
     public static void toastLongMsg(String format, Object... args) {
         toastMsg(String.format(format, args), Toast.LENGTH_LONG);

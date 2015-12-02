@@ -9,12 +9,11 @@ import com.wenjackp.android.lib.utils.LogUtils;
 
 /**
  * 加载更多监听类
- * <b>完成数据加载后必须设置onLoadMoreCompelete(),否则只会执行一次.</b>
- * <b>暂时支持LinearLayoutManager、GridLayoutManager</b>
+ * 完成数据加载后必须设置onLoadMoreCompelete(),否则只会执行一次.
+ * 暂时支持LinearLayoutManager、GridLayoutManager
  *
  * @author Single
  * @version 1.0
- * @category Listener
  */
 public class OnRecyclerViewScrollListener extends RecyclerView.OnScrollListener {
 
@@ -58,16 +57,16 @@ public class OnRecyclerViewScrollListener extends RecyclerView.OnScrollListener 
             StaggeredGridLayoutManager mStaggeredGridLayoutManager = (StaggeredGridLayoutManager) mLayoutManager;
             int[] temp = mStaggeredGridLayoutManager.findLastVisibleItemPositions(null);
 
-            if(temp == null){
+            if (temp == null) {
                 return;
             }
 
-            if(temp.length>1){
+            if (temp.length > 1) {
                 lastVisiable = temp[0] > temp[1] ? temp[0] : temp[1];
                 totalVisiable = mStaggeredGridLayoutManager.getItemCount();
             }
         }
-        
+
         if (lastVisiable != -1 && totalVisiable != -1 && lastVisiable + 1 == totalVisiable && dy > 0) {
             LogUtils.logEMsg(" LastVisiable : " + lastVisiable + "     total  " + totalVisiable);
             mLastItemVisiable = true;

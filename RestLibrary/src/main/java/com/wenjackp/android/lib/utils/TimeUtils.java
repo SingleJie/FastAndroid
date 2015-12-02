@@ -9,7 +9,6 @@ import java.util.Date;
  *
  * @author Single
  * @version 1.0
- * @category 时间相关操作类
  */
 public class TimeUtils {
 
@@ -19,7 +18,7 @@ public class TimeUtils {
      * 比较两个时间的大小
      *
      * @param time yyyy-MM-dd HH:mm:ss
-     * @return >0 当前时间大于目标时间
+     * @return 大于0 当前时间大于目标时间
      */
     public static int compareTime(String time) throws Exception {
         SimpleDateFormat sdf = new SimpleDateFormat(pattern);
