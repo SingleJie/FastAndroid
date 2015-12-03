@@ -5,7 +5,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'rest'
+    bintrayName = 'rest-lib'
 
     publishedGroupId = 'com.wenjackp.android'
     libraryName = 'RestLibrary'
