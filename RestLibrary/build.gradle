@@ -9,14 +9,14 @@ ext {
 
     publishedGroupId = 'com.wenjackp.android'
     libraryName = 'RestLibrary'
-    artifact = 'RestLibrary'
+    artifact = 'rest-lib'
 
     libraryDescription = '我定义个一个Library'
 
     siteUrl = 'https://github.com/SingleJie/WenJackpLib'
     gitUrl = 'https://github.com/SingleJie/WenJackpLib.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.0.2'
 
     developerId = 'wen'
     developerName = 'jackp'
@@ -55,8 +55,6 @@ dependencies {
     compile files('libs/nineoldandroids-2.4.0.jar')
 }
 
-version = libraryVersion
-
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier = 'sources'
@@ -64,8 +62,8 @@ task sourcesJar(type: Jar) {
 
 task javadoc(type: Javadoc) {
     source = android.sourceSets.main.java.srcDirs
-     //classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-    //classpath += project.files(configurations.compile.files,android.getBootClasspath().join(File.pathSeparator))
+//     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+//    classpath += project.files(configurations.compile.files,android.getBootClasspath().join(File.pathSeparator))
     options.encoding = "UTF-8"
 }
 
@@ -145,4 +143,4 @@ android.libraryVariants.all { variant ->
 }
 
 
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
