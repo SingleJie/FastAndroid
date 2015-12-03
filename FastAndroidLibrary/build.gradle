@@ -16,7 +16,7 @@ ext {
     siteUrl = 'https://github.com/SingleJie/FastAndroid'
     gitUrl = 'https://github.com/SingleJie/FastAndroid.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.0.2'
 
     developerId = 'wen'
     developerName = 'jackp'
@@ -53,6 +53,8 @@ dependencies {
     compile files('libs/gson-2.2.4.jar')
     compile files('libs/nineoldandroids-2.4.0.jar')
 }
+
+version =  libraryVersion
 
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
@@ -141,5 +143,46 @@ android.libraryVariants.all { variant ->
     }
 }
 
+
+group = publishedGroupId
+
+install {
+    repositories.mavenInstaller {
+        // This generates POM.xml with proper parameters
+        pom {
+            project {
+                packaging 'aar'
+                groupId publishedGroupId
+                artifactId artifact
+
+                // Add your description here
+                name libraryName
+                description libraryDescription
+                url siteUrl
+
+                // Set your license
+                licenses {
+                    license {
+                        name licenseName
+                        url licenseUrl
+                    }
+                }
+                developers {
+                    developer {
+                        id developerId
+                        name developerName
+                        email developerEmail
+                    }
+                }
+                scm {
+                    connection gitUrl
+                    developerConnection gitUrl
+                    url siteUrl
+
+                }
+            }
+        }
+    }
+}
 
 //apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
