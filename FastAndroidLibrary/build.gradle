@@ -5,18 +5,18 @@ apply plugin: 'com.github.dcendents.android-maven'
 
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'rest-lib'
+    bintrayName = 'fast-android'
 
-    publishedGroupId = 'com.wenjackp.android'
-    libraryName = 'RestLibrary'
-    artifact = 'rest'
+    publishedGroupId = 'com.wenjackp.android.lib'
+    libraryName = 'FastAndroidLibrary'
+    artifact = 'fast-android'
 
     libraryDescription = 'a rest android library'
 
     siteUrl = 'https://github.com/SingleJie/WenJackpLib'
     gitUrl = 'https://github.com/SingleJie/WenJackpLib.git'
 
-    libraryVersion = '1.0.3'
+    libraryVersion = '1.0.4'
 
     developerId = 'wen'
     developerName = 'jackp'

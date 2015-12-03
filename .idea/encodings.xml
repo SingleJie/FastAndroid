@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/RestLibrary" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/libs/gson-2.2.4.jar" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/libs/nineoldandroids-2.4.0.jar" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/adapters/EasyAdapter.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/adapters/EasyRecyclerAdapter.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/entitys/ViewHolder.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/listeners/OnItemClickListener.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/listeners/OnRecyclerViewScrollListener.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/listeners/OnScrollLoadMoreListener.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/AesEncryUtils.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/ContactUtils.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/EmptyUtils.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/FontStyle.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/FontStyleBuilder.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/ImageCompressUtils.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/ImageFormatUtils.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/LogUtils.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/Md5EncryUtils.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/PatternUtils.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/RecyclerViewBaseHolder.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/ResourceMappingUtils.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/ScreenUtils.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/TextStyle.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/TextTools.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/TimeUtils.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestLibrary/src/main/java/com/wenjackp/android/lib/utils/ViewHolderUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/libs/gson-2.2.4.jar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/libs/nineoldandroids-2.4.0.jar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/adapters/EasyAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/adapters/EasyRecyclerAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/entitys/ViewHolder.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/listeners/OnItemClickListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/listeners/OnRecyclerViewScrollListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/listeners/OnScrollLoadMoreListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/AesEncryUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/ContactUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/EmptyUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/FontStyle.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/FontStyleBuilder.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/ImageCompressUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/ImageFormatUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/LogUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/Md5EncryUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/PatternUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/RecyclerViewBaseHolder.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/ResourceMappingUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/ScreenUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/TextStyle.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/TextTools.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/TimeUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastAndroidLibrary/src/main/java/com/wenjackp/android/lib/utils/ViewHolderUtils.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

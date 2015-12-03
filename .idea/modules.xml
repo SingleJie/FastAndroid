@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RestLibrary/RestLibrary.iml" filepath="$PROJECT_DIR$/RestLibrary/RestLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FastAndroidLibrary/FastAndroidLibrary.iml" filepath="$PROJECT_DIR$/FastAndroidLibrary/FastAndroidLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FastAndroidLibrary/RestLibrary.iml" filepath="$PROJECT_DIR$/FastAndroidLibrary/RestLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/WenJackpLib.iml" filepath="$PROJECT_DIR$/WenJackpLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
