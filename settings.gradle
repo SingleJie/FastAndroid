@@ -1,1 +1,1 @@
-include ':app', ':FastAndroidLibrary', ':RestLibrary'
+include ':app', ':fast-android', ':RestLibrary'
