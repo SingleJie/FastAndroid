@@ -3,9 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/fast-android" charset="GBK" />
     <file url="file://$PROJECT_DIR$/fast-android/libs/gson-2.2.4.jar" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/libs/httpcore-4.3.3.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fast-android/libs/nineoldandroids-2.4.0.jar" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/libs/xstream-1.4.7.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fast-android/src/main/java/com/wenjackp/android/lib/adapters/EasyAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fast-android/src/main/java/com/wenjackp/android/lib/adapters/EasyRecyclerAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fast-android/src/main/java/com/wenjackp/android/lib/entitys/ViewHolder.java" charset="UTF-8" />
@@ -30,85 +28,6 @@
     <file url="file://$PROJECT_DIR$/fast-android/src/main/java/com/wenjackp/android/lib/utils/TextTools.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fast-android/src/main/java/com/wenjackp/android/lib/utils/TimeUtils.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fast-android/src/main/java/com/wenjackp/android/lib/utils/ViewHolderUtils.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/AbstractMultipartForm.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/CurrentOutputStream.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/FormBodyPart.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/Header.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/HttpBrowserCompatibleMultipart.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/HttpMultipartMode.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/HttpRFC6532Multipart.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/HttpStrictMultipart.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/MIME.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/MinimalField.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/MultipartEntityBuilder.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/MultipartFormEntity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/OnUploadListener.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/content/AbstractContentBody.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/content/ByteArrayBody.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/content/ContentBody.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/content/ContentDescriptor.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/content/FileBody.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/content/InputStreamBody.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/content/StringBody.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/content/package-info.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/mime/package-info.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/CacheDispatcher.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/CallBackListener.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/DefaultRetryPolicy.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/ExecutorDelivery.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/NetworkDispatcher.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/NetworkResponse.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/Request.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/RequestParams.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/RequestQueue.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/Response.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/VolleyLog.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/VolleyRest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/enums/RequestType.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/enums/ResponseType.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/error/AuthFailureError.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/error/NetworkError.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/error/NoConnectionError.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/error/ParseError.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/error/ServerError.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/error/TimeoutError.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/error/VolleyError.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/interfaces/Authenticator.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/interfaces/Cache.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/interfaces/HttpStack.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/interfaces/IRequestParams.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/interfaces/Network.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/interfaces/OnPreHandlerListener.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/interfaces/ResponseDelivery.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/interfaces/RetryPolicy.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/models/ByteArrayModels.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/models/FileModels.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/models/InputStreamModels.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/request/ClearCacheRequest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/request/GsonRequest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/request/ImageRequest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/request/JSONArrayRequest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/request/JSONObjectRequest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/request/JSONRequest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/request/ObjectRequest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/request/SimpleBaseRequest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/request/StringRequest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/request/XmlRequest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/toolbox/AndroidAuthenticator.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/toolbox/BasicNetwork.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/toolbox/ByteArrayPool.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/toolbox/DiskBasedCache.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/toolbox/HttpClientStack.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/toolbox/HttpHeaderParser.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/toolbox/HurlStack.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/toolbox/ImageLoader.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/toolbox/NetworkImageView.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/toolbox/NoCache.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/toolbox/OkHttpClientStack.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/toolbox/PoolingByteArrayOutputStream.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/toolbox/RequestFuture.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fast-android/src/main/java/volley/toolbox/Volley.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/volley-rest/install.gradle" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
