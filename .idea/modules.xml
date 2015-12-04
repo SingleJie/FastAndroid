@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/fast-android/RestLibrary.iml" filepath="$PROJECT_DIR$/fast-android/RestLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/WenJackpLib.iml" filepath="$PROJECT_DIR$/WenJackpLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/fast-android/fast-android.iml" filepath="$PROJECT_DIR$/fast-android/fast-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volley-rest/volley-rest.iml" filepath="$PROJECT_DIR$/volley-rest/volley-rest.iml" />
     </modules>
   </component>
 </project>

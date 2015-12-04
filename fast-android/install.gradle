@@ -15,7 +15,7 @@ ext {
     siteUrl = 'https://github.com/SingleJie/FastAndroid'
     gitUrl = 'https://github.com/SingleJie/FastAndroid.git'
 
-    libraryVersion = '1.0.3'
+    libraryVersion = '1.0.0'
 
     developerId = 'wen'
     developerName = 'jackp'

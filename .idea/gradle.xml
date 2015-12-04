@@ -10,9 +10,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/RestLibrary" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/fast-android" />
+            <option value="$PROJECT_DIR$/volley-rest" />
           </set>
         </option>
       </GradleProjectSettings>
