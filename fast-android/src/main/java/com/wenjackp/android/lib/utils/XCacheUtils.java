@@ -22,6 +22,8 @@ public class XCacheUtils {
     private static Map<String, SharedPreferences> mCaches = new HashMap<>();
     private static final int EMPTY_MODE = -1;
 
+    private String fileName;
+
     public XCacheUtils(Context context) {
         this.context = context;
         mGson = new Gson();
@@ -89,7 +91,12 @@ public class XCacheUtils {
     }
 
     private SharedPreferences getDefault() {
-        return getPreferences(getClassName(context), EMPTY_MODE);
+
+        if(EmptyUtils.emptyOfString(fileName)) {
+            return getPreferences(getClassName(context), EMPTY_MODE);
+        }else{
+            return null;
+        }
     }
 
     private SharedPreferences getPreferences(String name, int mode) {
