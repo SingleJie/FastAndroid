@@ -6,12 +6,7 @@ import android.graphics.PixelFormat;
 import android.graphics.drawable.Drawable;
 
 public class ImageUtils {
-	
-	/**
-	 * Drawable 转 Bitmap
-	 * @param drawable
-	 * @return
-	 */
+
 	public static Bitmap bitmapFromDrawable(Drawable drawable) 
 	{
 		Bitmap bitmap = Bitmap

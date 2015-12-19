@@ -31,14 +31,6 @@ public class CycleViewPager extends ViewPager {
     private CyclePagerAdapterWrapper mAdapter;
     private boolean mBoundaryCaching = DEFAULT_BOUNDARY_CASHING;
 
-
-    /**
-     * helper function which may be used when implementing FragmentPagerAdapter
-     *
-     * @param position
-     * @param count
-     * @return (position-1)%count
-     */
     public static int toRealPosition( int position, int count ){
         position = position-1;
         if( position < 0 ){
@@ -49,12 +41,6 @@ public class CycleViewPager extends ViewPager {
         return position;
     }
 
-    /**
-     * If set to true, the boundary views (i.e. first and last) will never be destroyed
-     * This may help to prevent "blinking" of some views
-     *
-     * @param flag
-     */
     public void setBoundaryCaching(boolean flag) {
         mBoundaryCaching = flag;
         if (mAdapter != null) {
