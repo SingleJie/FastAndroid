@@ -15,7 +15,7 @@ ext {
     siteUrl = 'https://github.com/SingleJie/FastAndroid'
     gitUrl = 'https://github.com/SingleJie/FastAndroid.git'
 
-    libraryVersion = '1.0.2'
+    libraryVersion = '1.0.3'
 
     developerId = 'wen'
     developerName = 'jackp'
@@ -50,7 +50,7 @@ artifacts {
 // Bintray
 
 Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream()) // local.properties ÓÐ sdk µÄ¾ø¶ÔÎ»ÖÃ
+properties.load(project.rootProject.file('local.properties').newDataInputStream()) // local.properties ï¿½ï¿½ sdk ï¿½Ä¾ï¿½ï¿½ï¿½Î»ï¿½ï¿½
 allprojects {
     repositories {
         maven {
@@ -89,7 +89,7 @@ bintray {
 
 android.libraryVariants.all { variant ->
     println variant.javaCompile.classpath.files
-    if (variant.name == 'release') { //ÎÒÃÇÖ»Ðè release µÄ javadoc
+    if (variant.name == 'release') { //ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ release ï¿½ï¿½ javadoc
         task("generate${variant.name.capitalize()}Javadoc", type: Javadoc) {
             // title = ''
             // description = ''
