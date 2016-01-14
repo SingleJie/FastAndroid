@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import android.content.Context;
 
@@ -10,7 +10,7 @@ import java.lang.reflect.Field;
  * @author Single
  * @version 1.2
  */
-public final class ResMappingUtil {
+public final class ResMappingUtils {
 
     public static final String DRAWABLE = "drawable";
     public static final String LAYOUT = "layout";
@@ -30,7 +30,7 @@ public final class ResMappingUtil {
 
     private Context mContext;
 
-    public ResMappingUtil(Context mContext) {
+    public ResMappingUtils(Context mContext) {
         this.mContext = mContext;
     }
 

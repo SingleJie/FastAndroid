@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -10,7 +10,7 @@ import android.util.DisplayMetrics;
  * @author Single
  * @version 2.1
  */
-public class ScreenUtil {
+public class ScreenUtils {
 
     /**
      * 设备宽度Px

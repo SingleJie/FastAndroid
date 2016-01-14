@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -12,9 +12,9 @@ import com.google.gson.Gson;
  * @author Single
  * @version 1.2
  */
-public class SharedPreferencesTool {
+public class SharedPreferencesTools {
 
-    private final static String DEFAULT_FILE_NAME = SharedPreferencesTool.class.getName();
+    private final static String DEFAULT_FILE_NAME = SharedPreferencesTools.class.getName();
     private static Context mContext;
     private static boolean saveInDefault = true;
     private static String fileName;
@@ -26,7 +26,7 @@ public class SharedPreferencesTool {
      * @param mContext
      */
     public static void initConfig(Context mContext) {
-        SharedPreferencesTool.mContext = mContext;
+        SharedPreferencesTools.mContext = mContext;
     }
 
 
@@ -45,7 +45,7 @@ public class SharedPreferencesTool {
 
 
     public static void putString(String key, String value) {
-        if (!EmptyUtil.emptyOfString(key)) {
+        if (!EmptyUtils.emptyOfString(key)) {
             getEditor().putString(key, value).commit();
         } else {
             showKeyNullPointException();
@@ -54,7 +54,7 @@ public class SharedPreferencesTool {
 
 
     public static void putInt(String key, int value) {
-        if (!EmptyUtil.emptyOfString(key)) {
+        if (!EmptyUtils.emptyOfString(key)) {
             getEditor().putInt(key, value).commit();
         } else {
             showKeyNullPointException();
@@ -63,7 +63,7 @@ public class SharedPreferencesTool {
 
 
     public static void putLong(String key, long value) {
-        if (!EmptyUtil.emptyOfString(key)) {
+        if (!EmptyUtils.emptyOfString(key)) {
             getEditor().putLong(key, value).commit();
         } else {
             showKeyNullPointException();
@@ -72,7 +72,7 @@ public class SharedPreferencesTool {
 
 
     public static void putBoolean(String key, boolean value) {
-        if (!EmptyUtil.emptyOfString(key)) {
+        if (!EmptyUtils.emptyOfString(key)) {
             getEditor().putBoolean(key, value).commit();
         } else {
             showKeyNullPointException();
@@ -81,7 +81,7 @@ public class SharedPreferencesTool {
 
 
     public static void putFloat(String key, float value) {
-        if (!EmptyUtil.emptyOfString(key)) {
+        if (!EmptyUtils.emptyOfString(key)) {
             getEditor().putFloat(key, value).commit();
         } else {
             showKeyNullPointException();
@@ -122,7 +122,7 @@ public class SharedPreferencesTool {
 
 
     public static String getString(String key) {
-        if (!EmptyUtil.emptyOfString(key)) {
+        if (!EmptyUtils.emptyOfString(key)) {
             return getDefault().getString(key, null);
         } else {
             showKeyNullPointException();
@@ -180,12 +180,12 @@ public class SharedPreferencesTool {
 
 
     public static void setPriorityByDefault(boolean saveInDefault) {
-        SharedPreferencesTool.saveInDefault = saveInDefault;
+        SharedPreferencesTools.saveInDefault = saveInDefault;
     }
 
 
     public static void setFileName(String fileName) {
-        SharedPreferencesTool.fileName = fileName;
+        SharedPreferencesTools.fileName = fileName;
     }
 
     /**

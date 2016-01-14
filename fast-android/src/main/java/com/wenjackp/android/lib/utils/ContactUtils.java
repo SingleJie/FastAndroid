@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import android.content.AsyncQueryHandler;
 import android.content.ContentResolver;
@@ -11,9 +11,9 @@ import java.lang.reflect.Field;
  *
  * @author Single
  */
-public abstract class ContactUtil<T> extends AsyncQueryHandler {
+public abstract class ContactUtils<T> extends AsyncQueryHandler {
 
-    public ContactUtil(ContentResolver cr) {
+    public ContactUtils(ContentResolver cr) {
         super(cr);
     }
 
@@ -38,7 +38,7 @@ public abstract class ContactUtil<T> extends AsyncQueryHandler {
                 obj = cls.newInstance();
                 Field[] mFields = obj.getClass().getDeclaredFields();
 
-                if (!EmptyUtil.emptyOfArray(mFields)) {
+                if (!EmptyUtils.emptyOfArray(mFields)) {
                     for (Field mField : mFields) {
                         mField.setAccessible(true);
                         Class<?> mClassType = mField.getType();

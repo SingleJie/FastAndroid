@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import java.util.regex.Pattern;
 

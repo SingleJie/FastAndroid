@@ -15,7 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.wenjackp.android.lib.R;
-import com.wenjackp.android.lib.util.EmptyUtil;
+import com.wenjackp.android.lib.utils.EmptyUtils;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -378,7 +378,7 @@ public class LoadingView extends FrameLayout implements View.OnClickListener {
 
             String handlerName = v.getTag() == null ? null : v.getTag().toString();
 
-            if (!EmptyUtil.emptyOfString(handlerName)) {
+            if (!EmptyUtils.emptyOfString(handlerName)) {
 
                 Method mHandler = null;
 

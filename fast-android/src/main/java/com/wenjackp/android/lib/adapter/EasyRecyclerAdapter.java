@@ -7,8 +7,8 @@ import android.view.ViewGroup;
 
 import com.wenjackp.android.lib.entity.ViewHolder;
 import com.wenjackp.android.lib.listener.OnItemClickListener;
-import com.wenjackp.android.lib.util.EmptyUtil;
-import com.wenjackp.android.lib.util.RecyclerViewBaseHolder;
+import com.wenjackp.android.lib.utils.EmptyUtils;
+import com.wenjackp.android.lib.utils.RecyclerViewBaseHolder;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -83,7 +83,7 @@ public abstract class EasyRecyclerAdapter<E, T extends ViewHolder> extends Recyc
 
         int insertPosition = 0;
 
-        if (!EmptyUtil.emptyOfList(this.mList)) {
+        if (!EmptyUtils.emptyOfList(this.mList)) {
             this.mList.add(mItem);
             insertPosition = mList.size() - 1;
         }
@@ -99,7 +99,7 @@ public abstract class EasyRecyclerAdapter<E, T extends ViewHolder> extends Recyc
     }
 
     public void removeData(E mItem){
-        if(!EmptyUtil.emptyOfList(mList)){
+        if(!EmptyUtils.emptyOfList(mList)){
             this.mList.remove(mItem);
         }
         this.notifyDataSetChanged();
@@ -107,7 +107,7 @@ public abstract class EasyRecyclerAdapter<E, T extends ViewHolder> extends Recyc
 
     public void removeData(int position){
 
-        if(!EmptyUtil.emptyOfList(mList)){
+        if(!EmptyUtils.emptyOfList(mList)){
             mList.remove(position);
         }
         this.notifyDataSetChanged();
@@ -116,7 +116,7 @@ public abstract class EasyRecyclerAdapter<E, T extends ViewHolder> extends Recyc
     @Override
     public int getItemCount() {
 
-        if (!EmptyUtil.emptyOfList(this.mList)) {
+        if (!EmptyUtils.emptyOfList(this.mList)) {
             return this.mList.size();
         }else {
             return 0;
@@ -125,7 +125,7 @@ public abstract class EasyRecyclerAdapter<E, T extends ViewHolder> extends Recyc
 
     public E getItem(int position) {
 
-        if (!EmptyUtil.emptyOfList(this.mList)) {
+        if (!EmptyUtils.emptyOfList(this.mList)) {
             return this.mList.get(position);
         }else {
             return null;

@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import android.content.Context;
 import android.util.Log;
@@ -10,18 +10,18 @@ import android.widget.Toast;
  * @author Single
  * @version 1.5
  */
-public class LogUtil {
+public class LogUtils {
 
     private static Context mContext;
     private static boolean mShowDebug;
-    private static String TAG = LogUtil.class.getName();
+    private static String TAG = LogUtils.class.getName();
 
     public static void initConfig(Context mContext,boolean mShowDebug) {
-        LogUtil.mContext = mContext;
-        LogUtil.mShowDebug = mShowDebug;
+        LogUtils.mContext = mContext;
+        LogUtils.mShowDebug = mShowDebug;
     }
 
-    private LogUtil() {
+    private LogUtils() {
     }
 
     public static void toastShortMsgForRes(int resourceId) {
@@ -38,7 +38,7 @@ public class LogUtil {
     }
 
     private static void toastMsg(String msg, int duration) {
-        if (mContext != null && !EmptyUtil.emptyOfString(msg)) {
+        if (mContext != null && !EmptyUtils.emptyOfString(msg)) {
             Toast.makeText(mContext, msg, duration).show();
         }
     }
@@ -192,7 +192,7 @@ public class LogUtil {
     }
 
     public static void setLogTag(String TAG) {
-        LogUtil.TAG = TAG;
+        LogUtils.TAG = TAG;
     }
 
     public enum DeBugMode {

@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -14,7 +14,7 @@ import java.lang.reflect.Field;
  *          1.实体类必须为外部类或静态内部类
  *          2.convertView.getTag()可以得到实例化后的对象
  */
-public class ViewHolderUtil {
+public class ViewHolderUtils {
 
     private static final String ID = "id";
 

@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -10,7 +10,7 @@ import java.util.Date;
  * @author Single
  * @version 1.0
  */
-public class TimeUtil {
+public class TimeUtils {
 
     public static final String pattern = "yyyy-MM-dd HH:mm:ss";
 

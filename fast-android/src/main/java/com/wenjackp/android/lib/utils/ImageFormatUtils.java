@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
@@ -19,7 +19,7 @@ import java.io.InputStream;
  * @author Single
  * @version 1.2
  */
-public final class ImageFormatUtil {
+public final class ImageFormatUtils {
 
     private final static int QUALITY_FULL = 100;
 

@@ -1,6 +1,6 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
-public class PatternUtil {
+public class PatternUtils {
 	
 	/**检测是否为手机号码*/
 	public static final String CHECK_IS_PHONE = "^(13|15|18)\\d{9}$";

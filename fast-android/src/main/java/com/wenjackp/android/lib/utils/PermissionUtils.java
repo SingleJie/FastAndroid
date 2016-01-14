@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import android.app.Activity;
 import android.content.Context;
@@ -29,7 +29,7 @@ import android.support.v4.content.ContextCompat;
  * @author WenJackp
  * @version 1.0
  */
-public class PermissionUtil {
+public class PermissionUtils {
 
     /**
      * 判断权限是否已经注册
@@ -40,7 +40,7 @@ public class PermissionUtil {
      */
     public static boolean checkSelfPermission(Activity activity, String[] permissions) {
 
-        if (!EmptyUtil.emptyOfArray(permissions)) {
+        if (!EmptyUtils.emptyOfArray(permissions)) {
             for (String permission : permissions) {
                 boolean self = ContextCompat.checkSelfPermission(activity, permission) != PackageManager.PERMISSION_GRANTED;
                 if (self) {
@@ -64,7 +64,7 @@ public class PermissionUtil {
 
     public static boolean shouldShowRequestPermissionRationale(Activity activity, String[] permissions) {
 
-        if (!EmptyUtil.emptyOfArray(permissions)) {
+        if (!EmptyUtils.emptyOfArray(permissions)) {
             for (String permission : permissions) {
                 boolean self = shouldShowRequestPermissionRationale(activity, permission);
                 if (self) {

@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -32,7 +32,7 @@ public class TextTool {
     private HashMap<Pattern, FontStyleBuilder.OnMatcherListener> mPatterns;
 
     public TextTool(String text) {
-        if (!EmptyUtil.emptyOfString(text)) {
+        if (!EmptyUtils.emptyOfString(text)) {
             mBuilder = new StringBuilder(text);
         } else {
             mBuilder = new StringBuilder();
@@ -78,7 +78,7 @@ public class TextTool {
 
         mString = new SpannableString(mBuilder.toString());
 
-        if (!EmptyUtil.emptyOfList(mFontStyles)) {
+        if (!EmptyUtils.emptyOfList(mFontStyles)) {
             int length = mFontStyles.size();
             for (int i = 0; i < length; i++) {
                 FontStyle mBuilder = mFontStyles.get(i);
@@ -93,7 +93,7 @@ public class TextTool {
             }
         }
 
-        if (!EmptyUtil.emptyOfMap(mPatterns)) {
+        if (!EmptyUtils.emptyOfMap(mPatterns)) {
             int start = 0;
             int end = 0;
 
@@ -143,12 +143,12 @@ public class TextTool {
             mString.setSpan(mSpan, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         }
 
-        if (!EmptyUtil.emptyOfString(mBuilder.links)) {
+        if (!EmptyUtils.emptyOfString(mBuilder.links)) {
             URLSpan mSpan = new URLSpan(mBuilder.links);
             mString.setSpan(mSpan, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         }
 
-        if (!EmptyUtil.emptyOfString(mBuilder.family)) {
+        if (!EmptyUtils.emptyOfString(mBuilder.family)) {
             TypefaceSpan mSpan = new TypefaceSpan(mBuilder.family);
             mString.setSpan(mSpan, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         }
@@ -160,13 +160,13 @@ public class TextTool {
     }
 
     private void checkStylesIsEmpty() {
-        if (EmptyUtil.emptyOfList(mFontStyles)) {
+        if (EmptyUtils.emptyOfList(mFontStyles)) {
             mFontStyles = new ArrayList<>();
         }
     }
 
     private void checkPatternIsEmpty() {
-        if (EmptyUtil.emptyOfMap(mPatterns)) {
+        if (EmptyUtils.emptyOfMap(mPatterns)) {
             mPatterns = new HashMap<>();
         }
     }

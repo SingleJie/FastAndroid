@@ -21,7 +21,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 
-import com.wenjackp.android.lib.util.LogUtil;
+import com.wenjackp.android.lib.utils.LogUtils;
 
 public class CycleViewPager extends ViewPager {
 
@@ -150,7 +150,7 @@ public class CycleViewPager extends ViewPager {
                 if (state == ViewPager.SCROLL_STATE_IDLE
                         && (position == 0 || position == mAdapter.getCount() - 1)) {
                     setCurrentItem(realPosition, false);
-                    LogUtil.logEMsg("position:" + position + "------" + realPosition);
+                    LogUtils.logEMsg("position:" + position + "------" + realPosition);
                 }
             }
             if (mOuterPageChangeListener != null) {

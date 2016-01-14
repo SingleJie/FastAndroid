@@ -5,7 +5,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 
-import com.wenjackp.android.lib.util.LogUtil;
+import com.wenjackp.android.lib.utils.LogUtils;
 
 /**
  * 加载更多监听类
@@ -62,7 +62,7 @@ public class OnRecyclerViewScrollListener extends RecyclerView.OnScrollListener 
         }
 
         if (lastVisiable != -1 && totalVisiable != -1 && lastVisiable + 1 == totalVisiable && dy > 0) {
-            LogUtil.logEMsg(" LastVisiable : " + lastVisiable + "     total  " + totalVisiable);
+            LogUtils.logEMsg(" LastVisiable : " + lastVisiable + "     total  " + totalVisiable);
             mLastItemVisiable = true;
         }
         super.onScrolled(recyclerView, dx, dy);

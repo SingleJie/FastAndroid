@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -16,6 +16,6 @@ public class RecyclerViewBaseHolder<T> extends RecyclerView.ViewHolder {
     @SuppressWarnings("unchecked")
     public RecyclerViewBaseHolder(View itemView, Class<?> cls) {
         super(itemView);
-        base = (T) ViewHolderUtil.loadingViewHolder(itemView, cls);
+        base = (T) ViewHolderUtils.loadingViewHolder(itemView, cls);
     }
 }

@@ -6,8 +6,8 @@ import android.widget.BaseAdapter;
 
 import com.wenjackp.android.lib.entity.ViewHolder;
 import com.wenjackp.android.lib.listener.OnItemClickListener;
-import com.wenjackp.android.lib.util.EmptyUtil;
-import com.wenjackp.android.lib.util.ViewHolderUtil;
+import com.wenjackp.android.lib.utils.EmptyUtils;
+import com.wenjackp.android.lib.utils.ViewHolderUtils;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -68,7 +68,7 @@ public abstract class EasyAdapter<E, T extends ViewHolder> extends BaseAdapter {
     }
 
     public void removeData(E mItem){
-        if(!EmptyUtil.emptyOfList(mList)){
+        if(!EmptyUtils.emptyOfList(mList)){
             this.mList.remove(mItem);
         }
         this.notifyDataSetChanged();
@@ -76,7 +76,7 @@ public abstract class EasyAdapter<E, T extends ViewHolder> extends BaseAdapter {
 
     public void removeData(int position){
 
-        if(!EmptyUtil.emptyOfList(mList)){
+        if(!EmptyUtils.emptyOfList(mList)){
             mList.remove(position);
         }
         this.notifyDataSetChanged();
@@ -97,7 +97,7 @@ public abstract class EasyAdapter<E, T extends ViewHolder> extends BaseAdapter {
 
     public void addData(E mItem) {
 
-        if (!EmptyUtil.emptyOfList(this.mList)) {
+        if (!EmptyUtils.emptyOfList(this.mList)) {
             this.mList.add(mItem);
         }
         this.notifyDataSetChanged();
@@ -114,7 +114,7 @@ public abstract class EasyAdapter<E, T extends ViewHolder> extends BaseAdapter {
     @Override
     public int getCount() {
 
-        if (!EmptyUtil.emptyOfList(this.mList)) {
+        if (!EmptyUtils.emptyOfList(this.mList)) {
             return this.mList.size();
         }else {
             return 0;
@@ -124,7 +124,7 @@ public abstract class EasyAdapter<E, T extends ViewHolder> extends BaseAdapter {
     @Override
     public E getItem(int position) {
 
-        if (!EmptyUtil.emptyOfList(this.mList)) {
+        if (!EmptyUtils.emptyOfList(this.mList)) {
             return this.mList.get(position);
         }else {
             return null;
@@ -138,7 +138,7 @@ public abstract class EasyAdapter<E, T extends ViewHolder> extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        convertView = ViewHolderUtil.loadingConvertView(parent.getContext(), convertView, layout, mHolderClass);
+        convertView = ViewHolderUtils.loadingConvertView(parent.getContext(), convertView, layout, mHolderClass);
         final T mHolder = (T) convertView.getTag();
         mHolder.itemView = convertView;
         mHolder.currentPosition = position;

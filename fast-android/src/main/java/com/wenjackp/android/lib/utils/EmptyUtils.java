@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import java.util.List;
 import java.util.Map;
@@ -9,7 +9,7 @@ import java.util.Map;
  * @author Single
  * @version 1.1
  */
-public class EmptyUtil {
+public class EmptyUtils {
 
     public static boolean emptyOfString(String params) {
         if (params != null && params.length() > 0) {

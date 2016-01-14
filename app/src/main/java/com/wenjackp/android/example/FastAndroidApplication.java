@@ -2,8 +2,8 @@ package com.wenjackp.android.example;
 
 import android.app.Application;
 
-import com.wenjackp.android.lib.util.LogUtil;
-import com.wenjackp.android.lib.util.ScreenUtil;
+import com.wenjackp.android.lib.utils.LogUtils;
+import com.wenjackp.android.lib.utils.ScreenUtils;
 
 /**
  * Created by Administrator on 2015/12/5.
@@ -14,8 +14,8 @@ public class FastAndroidApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        LogUtil.initConfig(this, true);
-        ScreenUtil.initConfig(this);
+        LogUtils.initConfig(this, true);
+        ScreenUtils.initConfig(this);
 
     }
 }

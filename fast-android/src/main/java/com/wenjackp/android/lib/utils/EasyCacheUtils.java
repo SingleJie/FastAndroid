@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import android.content.Context;
 import android.util.Log;
@@ -26,12 +26,12 @@ import java.io.IOException;
  *          StrCacheManager.getInstance().saveCache()
  *          StrCacheManager.getInstance().getCache()
  */
-public class EasyCacheUtil {
+public class EasyCacheUtils {
 
     private final static int INVALIDE_VALUE = -1;
-    private static final String LOG_TAG = EasyCacheUtil.class.getName();
+    private static final String LOG_TAG = EasyCacheUtils.class.getName();
 
-    private static volatile EasyCacheUtil manager = null;
+    private static volatile EasyCacheUtils manager = null;
     private String cachePath;
     private File file;
     private String encode = "UTF-8";
@@ -44,18 +44,18 @@ public class EasyCacheUtil {
 
     private Context context;
 
-    public static EasyCacheUtil getInstance() {
+    public static EasyCacheUtils getInstance() {
         if (manager == null) {
-            synchronized (EasyCacheUtil.class) {
+            synchronized (EasyCacheUtils.class) {
                 if (manager == null) {
-                    manager = new EasyCacheUtil();
+                    manager = new EasyCacheUtils();
                 }
             }
         }
         return manager;
     }
 
-    private EasyCacheUtil() {
+    private EasyCacheUtils() {
     }
 
     /**
@@ -260,7 +260,7 @@ public class EasyCacheUtil {
     private String encryption(String data) {
         String value = null;
         try {
-            value = AesEncryUtil.encodeToString(String.valueOf(LOG_TAG.hashCode()), data);
+            value = AesEncryUtils.encodeToString(String.valueOf(LOG_TAG.hashCode()), data);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -276,7 +276,7 @@ public class EasyCacheUtil {
     private String decryption(String data) {
         String value = null;
         try {
-            value = AesEncryUtil.encodeToString(String.valueOf(LOG_TAG.hashCode()), data);
+            value = AesEncryUtils.encodeToString(String.valueOf(LOG_TAG.hashCode()), data);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -9,7 +9,7 @@ import java.security.NoSuchAlgorithmException;
  * @author Single
  * @version 1.0
  */
-public class Md5EncryUtil {
+public class Md5EncryUtils {
 
     public static String encodeToString16(String plainText) {
         return plainText;

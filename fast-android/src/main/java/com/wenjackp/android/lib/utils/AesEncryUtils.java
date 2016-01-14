@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import java.security.SecureRandom;
 
@@ -13,7 +13,7 @@ import javax.crypto.spec.SecretKeySpec;
  * @author Single
  * @version 1.0
  */
-public class AesEncryUtil {
+public class AesEncryUtils {
 
     private final static int JELLY_BEAN_4_2 = 17;
     private final static String HEX = "0123456789ABCDEF";

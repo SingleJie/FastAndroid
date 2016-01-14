@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.util;
+package com.wenjackp.android.lib.utils;
 
 import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
@@ -17,7 +17,7 @@ import java.io.ByteArrayOutputStream;
  * @author Single
  * @version 1.0
  */
-public class ImageCompressUtil {
+public class ImageCompressUtils {
 
     private static final int QUALITY = 100;
 
