@@ -1,4 +1,5 @@
-package com.wenjackp.android.lib.views;
+
+package com.wenjackp.android.lib.view;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -7,7 +8,7 @@ import android.graphics.drawable.Drawable;
 
 public class ImageUtils {
 
-	public static Bitmap bitmapFromDrawable(Drawable drawable) 
+	public static Bitmap bitmapFromDrawable(Drawable drawable)
 	{
 		Bitmap bitmap = Bitmap
 		.createBitmap(

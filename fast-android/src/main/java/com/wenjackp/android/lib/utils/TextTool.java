@@ -19,10 +19,11 @@ import java.util.regex.Pattern;
 
 /**
  * 字体处理工具
+ *
  * @author WenJackp
  * @version 1.0
  */
-public class TextTools {
+public class TextTool {
 
     private StringBuilder mBuilder;
     private List<FontStyle> mFontStyles;
@@ -30,7 +31,7 @@ public class TextTools {
 
     private HashMap<Pattern, FontStyleBuilder.OnMatcherListener> mPatterns;
 
-    public TextTools(String text) {
+    public TextTool(String text) {
         if (!EmptyUtils.emptyOfString(text)) {
             mBuilder = new StringBuilder(text);
         } else {
@@ -39,35 +40,35 @@ public class TextTools {
         mPatterns = new HashMap<>();
     }
 
-    public TextTools append(String text, int start, int end, TextStyle style) {
+    public TextTool append(String text, int start, int end, TextStyle style) {
         checkStylesIsEmpty();
         mBuilder.append(text, start, end);
         mFontStyles.add(FontStyle.buildStyle(text, start, end, style));
         return this;
     }
 
-    public TextTools append(String text) {
+    public TextTool append(String text) {
         checkStylesIsEmpty();
         mBuilder.append(text);
         mFontStyles.add(FontStyle.buildStyle(text, 0, 0, null));
         return this;
     }
 
-    public TextTools append(String text, TextStyle style) {
+    public TextTool append(String text, TextStyle style) {
         checkStylesIsEmpty();
         mBuilder.append(text);
         mFontStyles.add(FontStyle.buildStyle(text, mBuilder.length(), mBuilder.length() + text.length(), style));
         return this;
     }
 
-    public TextTools replace(String text, int start, int end, TextStyle style) {
+    public TextTool replace(String text, int start, int end, TextStyle style) {
         checkStylesIsEmpty();
         mBuilder.replace(start, end, text);
         mFontStyles.add(FontStyle.buildStyle(text, start, end, style));
         return this;
     }
 
-    public TextTools change(Pattern pattern, FontStyleBuilder.OnMatcherListener mListener) {
+    public TextTool change(Pattern pattern, FontStyleBuilder.OnMatcherListener mListener) {
         checkPatternIsEmpty();
         mPatterns.put(pattern, mListener);
         return this;
@@ -77,7 +78,7 @@ public class TextTools {
 
         mString = new SpannableString(mBuilder.toString());
 
-        if(!EmptyUtils.emptyOfList(mFontStyles)){
+        if (!EmptyUtils.emptyOfList(mFontStyles)) {
             int length = mFontStyles.size();
             for (int i = 0; i < length; i++) {
                 FontStyle mBuilder = mFontStyles.get(i);
@@ -107,7 +108,7 @@ public class TextTools {
                     if (mTemp.getValue() != null) {
                         TextStyle mBuilder = mTemp.getValue().onMatcher(content);
                         if (mBuilder != null) {
-                            setSpan(start,end, FontStyle.buildStyle(content, matcher.start(), matcher.end(), mBuilder));
+                            setSpan(start, end, FontStyle.buildStyle(content, matcher.start(), matcher.end(), mBuilder));
                         }
                     }
                 }
@@ -118,7 +119,7 @@ public class TextTools {
 
     private void setSpan(int start, int end, FontStyle mBuilder) {
 
-        if(mBuilder==null){
+        if (mBuilder == null) {
             return;
         }
 
@@ -152,9 +153,9 @@ public class TextTools {
             mString.setSpan(mSpan, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         }
 
-        if(mBuilder.imageDrawable != null){
+        if (mBuilder.imageDrawable != null) {
             ImageSpan mSpan = new ImageSpan(mBuilder.imageDrawable);
-            mString.setSpan(mSpan,start,end,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            mString.setSpan(mSpan, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         }
     }
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.wenjackp.android.lib.views;
+package com.wenjackp.android.lib.view;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
@@ -150,7 +150,7 @@ public class CycleViewPager extends ViewPager {
                 if (state == ViewPager.SCROLL_STATE_IDLE
                         && (position == 0 || position == mAdapter.getCount() - 1)) {
                     setCurrentItem(realPosition, false);
-                    LogUtils.logEMsg("position:"+position+"------"+realPosition);
+                    LogUtils.logEMsg("position:" + position + "------" + realPosition);
                 }
             }
             if (mOuterPageChangeListener != null) {

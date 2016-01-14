@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.wenjackp.android.lib.views;
+package com.wenjackp.android.lib.view;
 
 import android.os.Parcelable;
 import android.support.v4.app.FragmentPagerAdapter;

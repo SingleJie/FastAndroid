@@ -108,7 +108,6 @@ public final class ImageFormatUtils {
         if (mByte != null && mByte.length > 0) {
             return new ByteArrayInputStream(mByte);
         }
-
         return null;
     }
 }

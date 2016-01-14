@@ -11,8 +11,8 @@ import java.lang.reflect.Field;
  *
  * @author Single
  * @version 1.1
- * 1.实体类必须为外部类或静态内部类
- * 2.convertView.getTag()可以得到实例化后的对象
+ *          1.实体类必须为外部类或静态内部类
+ *          2.convertView.getTag()可以得到实例化后的对象
  */
 public class ViewHolderUtils {
 

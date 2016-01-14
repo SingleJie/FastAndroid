@@ -10,7 +10,7 @@ import java.lang.reflect.Field;
  * @author Single
  * @version 1.2
  */
-public final class ResourceMappingUtils {
+public final class ResMappingUtils {
 
     public static final String DRAWABLE = "drawable";
     public static final String LAYOUT = "layout";
@@ -30,7 +30,7 @@ public final class ResourceMappingUtils {
 
     private Context mContext;
 
-    public ResourceMappingUtils(Context mContext) {
+    public ResMappingUtils(Context mContext) {
         this.mContext = mContext;
     }
 

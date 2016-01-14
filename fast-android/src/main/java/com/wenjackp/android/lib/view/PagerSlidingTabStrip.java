@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.wenjackp.android.lib.views;
+package com.wenjackp.android.lib.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

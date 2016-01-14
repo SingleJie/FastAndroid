@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.entitys;
+package com.wenjackp.android.lib.entity;
 
 import android.view.View;
 

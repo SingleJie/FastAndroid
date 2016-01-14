@@ -1,4 +1,4 @@
-package com.wenjackp.android.lib.views;
+package com.wenjackp.android.lib.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
